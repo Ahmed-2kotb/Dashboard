@@ -1,0 +1,36 @@
+.topbar {
+	height: 60px;
+	background-color: #34495e;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1rem;
+	position: sticky;
+	top: 0;
+	z-index: 1100;
+}
+
+.topbar h1 {
+	font-size: 1.2rem;
+	margin: 0;
+	white-space: nowrap;
+}
+.toggle-btn {
+	font-size: 1.5rem;
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+	margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+	.toggle-btn {
+		display: none;
+	}
+
+	.topbar h1 {
+		font-size: 1.5rem;
+	}
+}

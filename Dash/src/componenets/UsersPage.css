@@ -1,0 +1,145 @@
+.users-page {
+  padding: 20px;
+  background-color: #fdfdfd;
+  min-height: 100%;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 250px; 
+  box-sizing: border-box;
+}
+.users-page h2 {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+.search-input {
+  padding: 8px 12px;
+  width: 300px;
+  margin-bottom: 15px;
+  border: 1px solid #3498db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.add-user-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.add-user-form input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 200px;
+  flex: 1;
+}
+.add-user-form button {
+  padding: 8px 14px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.add-user-form button:hover {
+  background-color: #27ae60;
+}
+.users-page table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.users-page th {
+  background-color: #375d84;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+.users-page td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+.users-page tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.users-page input[type='text'],
+.users-page input[type='email'] {
+  padding: 6px 8px;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 90%;
+}
+.users-page button.edit {
+  background-color: #3498db;
+  color: white;
+}
+.users-page button.delete {
+  background-color: #e74c3c;
+  color: white;
+}
+.users-page button:hover {
+  opacity: 0.85;
+}
+.users-page button.edit:hover {
+  background-color: #2980b9;
+}
+.users-page button.delete:hover {
+  background-color: #c0392b;
+}
+@media (max-width: 600px) {
+  .users-page {
+    padding: 10px;
+    margin-left: 0; 
+    font-size: 12px;
+  }
+  .users-page h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .search-input {
+    width: 100%;
+    font-size: 12px;
+  }
+  .add-user-form input,
+  .add-user-form button {
+    width: 100%;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  .users-page table {
+    width: 100%;
+    font-size: 12px; 
+  }
+  .users-page th, .users-page td {
+    padding: 6px 8px; 
+  }
+  .users-page input[type='text'], .users-page input[type='email'] {
+    font-size: 12px;
+    padding: 4px 6px;
+    width: 90%;
+  }
+  .users-page button.edit,
+  .users-page button.delete {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  .users-page td {
+    display: table-cell;
+  }
+  .users-page tr {
+    display: table-row;
+  }
+  .users-page thead {
+    display: table-header-group;
+  }
+  .users-page tbody {
+    display: table-row-group;
+  }
+}
